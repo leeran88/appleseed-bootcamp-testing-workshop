@@ -1,0 +1,19 @@
+{
+  "name": "appleseed-bootcamp-testing-workshop",
+  "version": "1.0.0",
+  "description": "A simple node project to write tests to.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeran88/appleseed-bootcamp-testing-workshop.git"
+  },
+  "author": "leeran88",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeran88/appleseed-bootcamp-testing-workshop/issues"
+  },
+  "homepage": "https://github.com/leeran88/appleseed-bootcamp-testing-workshop#readme"
+}
