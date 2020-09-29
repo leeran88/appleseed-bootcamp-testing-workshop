@@ -15,13 +15,29 @@ function markCell(rowIndex, columnIndex, sign) {
         throw new Error('game is over!');
     }
 
-    if (board[rowIndex][columnIndex] !== null) {
+    if (isCellTaken(rowIndex, columnIndex)) {
         throw new Error('cell is already taken!');
     }
     
     board[rowIndex][columnIndex] = sign;
     
     return getWinner();
+}
+
+function isCellTaken(rowIndex, columnIndex) {
+    return board[rowIndex][columnIndex] !== null;
+}
+
+function isAllCellsTaken() {
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            if (!isCellTaken(i, j)) {
+                return false;
+            }
+        }
+    }
+
+    return true;
 }
 
 function getCell(rowIndex, columnIndex) {
@@ -67,7 +83,7 @@ function getWinner() {
 }
 
 function isGameOver() {
-    return getWinner() !== null;
+    return getWinner() !== null || isAllCellsTaken();
 }
 
 module.exports = {
