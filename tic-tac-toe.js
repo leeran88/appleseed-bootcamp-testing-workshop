@@ -1,14 +1,12 @@
-const board = [];
+const board = [[null, null, null],
+               [null, null, null],
+               [null, null, null]];
 
-function init() {
+function newGame() {
     for (let i = 0; i < 3; i++) {
-        const newRow = [];
-        
-        newRow.push(null);
-        newRow.push(null);
-        newRow.push(null);
-        
-        board.push(newRow);
+        for (let j = 0; j < 3; j++) {
+            board[i][j] = null;    
+        }
     }
 }
 
@@ -73,7 +71,7 @@ function isGameOver() {
 }
 
 module.exports = {
-    init,
+    newGame,
     markCell,
     getCell,
     getBoard,

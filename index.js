@@ -4,7 +4,7 @@ console.log('Running test #1...');
 
 let winner;
 
-ticTacToe.init();
+ticTacToe.newGame();
 
 winner = ticTacToe.markCell(1, 1, 'X')
 console.log(`winner: ${winner}`);
