@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leeran88/appleseed-bootcamp-testing-workshop/issues"
   },
-  "homepage": "https://github.com/leeran88/appleseed-bootcamp-testing-workshop#readme"
+  "homepage": "https://github.com/leeran88/appleseed-bootcamp-testing-workshop#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
 }
