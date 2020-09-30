@@ -28,7 +28,7 @@ function isCellTaken(rowIndex, columnIndex) {
     return board[rowIndex][columnIndex] !== null;
 }
 
-function isAllCellsTaken() {
+function areAllCellsTaken() {
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
             if (!isCellTaken(i, j)) {
@@ -83,7 +83,7 @@ function getWinner() {
 }
 
 function isGameOver() {
-    return getWinner() !== null || isAllCellsTaken();
+    return getWinner() !== null || areAllCellsTaken();
 }
 
 module.exports = {
